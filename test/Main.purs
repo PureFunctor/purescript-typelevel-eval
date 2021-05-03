@@ -3,7 +3,7 @@ module Test.Main where
 import Prelude
 
 import Effect (Effect)
-import Type.Eval (class Eval, TEProxy(..), proxyEval, kind TypeExpr)
+import Type.Eval (class Eval, TEProxy(..), proxyEval, TypeExpr)
 import Type.Eval.Boolean (BProxy, Eq, False, True)
 import Type.Eval.Foldable (All)
 import Type.Eval.Function (type (<<<), Const)

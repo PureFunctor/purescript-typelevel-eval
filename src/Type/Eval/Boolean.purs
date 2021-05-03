@@ -5,8 +5,8 @@ module Type.Eval.Boolean
 
 import Prelude (Unit)
 import Prim.TypeError (Text)
-import Type.Data.Boolean (BProxy, False, True, kind Boolean)
-import Type.Eval (class Eval, class EvalTypeError, Lift, Throw, kind TypeExpr)
+import Type.Data.Boolean (BProxy, False, True)
+import Type.Eval (class Eval, class EvalTypeError, Lift, Throw, TypeExpr)
 import Type.Eval.Function (type ($))
 
 type TrueExpr = Lift (BProxy True)

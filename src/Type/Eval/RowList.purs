@@ -1,7 +1,7 @@
 module Type.Eval.RowList where
 
 import Prim.RowList (class RowToList)
-import Type.Eval (class Eval, kind TypeExpr)
+import Type.Eval (class Eval, TypeExpr)
 import Type.Prelude (RLProxy, RProxy)
 import Type.RowList (class ListToRow)
 

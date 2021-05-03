@@ -4,7 +4,7 @@ import Data.Symbol (SProxy)
 import Data.Tuple (Tuple)
 import Prim.RowList as RL
 import Type.Data.RowList (RLProxy)
-import Type.Eval (class Eval, kind TypeExpr)
+import Type.Eval (class Eval, TypeExpr)
 import Type.Eval.Boolean (Bool, FalseExpr, TrueExpr)
 
 foreign import data Foldr :: (Type -> TypeExpr -> TypeExpr) -> TypeExpr -> Type -> TypeExpr

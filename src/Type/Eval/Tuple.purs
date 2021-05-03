@@ -4,7 +4,7 @@ module Type.Eval.Tuple
   ) where
 
 import Data.Tuple (Tuple)
-import Type.Eval (class Eval, kind TypeExpr)
+import Type.Eval (class Eval, TypeExpr)
 
 foreign import data Fst :: Type -> TypeExpr
 

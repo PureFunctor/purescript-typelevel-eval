@@ -2,7 +2,7 @@ module Type.Eval.Row where
 
 import Prim.Row as Row
 import Type.Data.Row (RProxy)
-import Type.Eval (class Eval, kind TypeExpr)
+import Type.Eval (class Eval, TypeExpr)
 import Type.Eval.Function (type (<<<))
 
 foreign import data Prj :: Symbol -> Type -> TypeExpr

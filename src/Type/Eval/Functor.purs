@@ -4,7 +4,7 @@ import Data.Symbol (SProxy)
 import Data.Tuple (Tuple)
 import Prim.RowList as RL
 import Type.Data.RowList (RLProxy)
-import Type.Eval (class Eval, kind TypeExpr)
+import Type.Eval (class Eval, TypeExpr)
 
 foreign import data Map :: (Type -> TypeExpr) -> Type -> TypeExpr
 

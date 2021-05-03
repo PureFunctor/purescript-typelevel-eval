@@ -1,9 +1,9 @@
 module Type.Eval where
 
-import Prim.TypeError (kind Doc, class Fail, Above, Beside, Quote, Text)
+import Prim.TypeError (Doc, class Fail, Above, Beside, Quote, Text)
 import Type.Proxy (Proxy(..))
 
-foreign import kind TypeExpr
+data TypeExpr
 
 data TEProxy (expr :: TypeExpr) = TEProxy
 
