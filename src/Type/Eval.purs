@@ -7,7 +7,7 @@ data TypeExpr
 
 data TEProxy (expr :: TypeExpr) = TEProxy
 
-proxyEval :: forall expr ty. Eval expr ty => TEProxy expr -> Proxy ty
+proxyEval :: forall teproxy expr ty. Eval expr ty => teproxy expr -> Proxy ty
 proxyEval _ = Proxy
 
 class Eval (expr :: TypeExpr) (result :: Type) | expr -> result
